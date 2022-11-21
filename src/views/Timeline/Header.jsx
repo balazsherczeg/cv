@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Portrait from '../assets/images/balazs.jpg';
+import Portrait from 'assets/images/balazs.jpg';
+import { Link } from 'gatsby';
 
 const Wrapper = styled.div`
   background-color: var(--backgroundColor);
@@ -33,13 +34,13 @@ const Sub = styled.span`
   font-style: italic;
 `;
 
-
 const Header = ({}) => (
   <Wrapper>
     <Image src={Portrait} />
     <Title>
       <Name>Balázs Herczeg</Name> <Sub>resumé</Sub>
     </Title>
+    <Link to="/text">Traditional</Link>
   </Wrapper>
 );
 

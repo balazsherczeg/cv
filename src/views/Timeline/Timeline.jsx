@@ -2,7 +2,7 @@ import React from 'react';
 import { string, arrayOf, number} from 'prop-types';
 import styled from 'styled-components';
 
-import { getTop, getHeight } from '../utils';
+import { getTop, getHeight } from 'utils';
 
 const Wrapper = styled.div`
   cursor: pointer;

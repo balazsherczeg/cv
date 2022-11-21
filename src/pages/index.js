@@ -1,6 +1,6 @@
 import React from 'react';
 
-import App from '../components/App';
+import App from '../views/Timeline';
 
 const IndexPage = () => <App />;
 

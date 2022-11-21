@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled, { createGlobalStyle } from 'styled-components';
 
-import '../assets/styles/reset.css';
+import '../../assets/styles/reset.css';
 import Header from './Header';
 import Timelines from './Timelines';
 
@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: var(--backgroundColor);
     padding: 0 2em;
     font-family: 'Source Sans Pro', sans-serif;
+  }
 
   * {
     box-sizing: border-box;

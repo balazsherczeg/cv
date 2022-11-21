@@ -8,7 +8,7 @@ import {
 } from 'prop-types';
 import styled from 'styled-components';
 
-import { getTop, getHeight } from '../utils';
+import { getTop, getHeight } from 'utils';
 
 const Break = styled.div`
   align-items: center;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MAX } from '../utils';
+import { MAX } from 'utils';
 
 const Year = styled.div`
   border-bottom: #aaa 1px solid;

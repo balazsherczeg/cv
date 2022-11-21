@@ -1,10 +1,9 @@
 import React from 'react';
 import { bool, number, string, shape } from 'prop-types';
 import styled from 'styled-components';
-// import ReactMarkdown from 'react-markdown';
 import Markdown from 'markdown-to-jsx';
 
-import { getTop } from '../utils';
+import { getTop } from 'utils';
 import Animator from './Animator';
 import Music from './Music';
 
