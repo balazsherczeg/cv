@@ -70,6 +70,7 @@ const Timelines = () => {
                   {...item}
                   isOpen={open === item.name}
                   onClick={setOpen}
+                  key={`timeline-${item.name}`}
                 />
               ))
             }
@@ -92,6 +93,7 @@ const Timelines = () => {
                   {...item}
                   isOpen={open === item.name}
                   onClick={setOpen}
+                  key={`event-${item.name}`}
                 />
               ))
             }

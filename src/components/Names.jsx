@@ -14,19 +14,6 @@ const Name = styled.div`
   transition: var(--openingSpeed) width;
 `;
 
-// const Inner = styled.div`
-//   cursor: pointer;
-//   line-height: 24px;
-//   padding: ${({ isOpen }) => isOpen ? '0 0 8px 4px' : '0 0 0 8px'};
-//   transform-origin: left top;
-//   transform: ${({ isOpen }) => isOpen
-//     ? 'translateY(calc(var(--headerHeight) - 24px))'
-//     : 'rotate(-90deg) translateX(calc(-1 * var(--headerHeight)))'
-//   };
-//   transition: var(--openingSpeed) transform, var(--openingSpeed) padding;
-//   white-space: nowrap;
-// `;
-
 const Inner = styled.div`
   cursor: pointer;
   line-height: 24px;
@@ -36,7 +23,7 @@ const Inner = styled.div`
     : 'rotate(90deg) translateY(calc(-1 * var(--columnWidth)))'
   };
   transition: var(--openingSpeed) transform;
-  white-space: nowrap;
+  ${({ isOpen }) => isOpen ? '' : 'white-space: nowrap;'}
 `;
 
 const Names = ({

@@ -22,7 +22,7 @@
     inactive:
       -
         - 201506
-        - NOW
+        - 202012
     type: skill
   - name: InDesign
     color: '#B5357C'
