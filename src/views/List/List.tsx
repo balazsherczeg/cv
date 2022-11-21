@@ -1,8 +1,6 @@
 import React from 'react';
-
-import styled, { createGlobalStyle } from 'styled-components';
-
 import 'assets/styles/reset.css';
+import styled, { createGlobalStyle } from 'styled-components';
 
 const List = () => {
   return <div>List</div>;

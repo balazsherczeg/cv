@@ -1,8 +1,7 @@
 import React from 'react';
-import { arrayOf, func, number, bool, shape, string } from 'prop-types';
-
+import { arrayOf, bool, func, number, shape, string } from 'prop-types';
+import Column from './Column';
 import Event from './Event';
-import Column from "./Column";
 
 const Events = ({ color, name, events, isOpen, onClick }) => (
   <Column isOpen={isOpen} name={name} onClick={onClick}>

@@ -33,6 +33,14 @@ module.exports = {
       'warn',
       {
         singleQuote: true,
+        importOrder: [
+          'react',
+          '<THIRD_PARTY_MODULES>',
+          '^utils(.*)$',
+          '^data(.*)$',
+          '^[../]',
+          '^[./]',
+        ],
       },
     ],
   },

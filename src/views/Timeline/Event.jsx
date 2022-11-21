@@ -1,8 +1,7 @@
 import React from 'react';
-import { bool, number, string, shape } from 'prop-types';
-import styled from 'styled-components';
 import Markdown from 'markdown-to-jsx';
-
+import { bool, number, shape, string } from 'prop-types';
+import styled from 'styled-components';
 import { getTop } from 'utils';
 import Animator from './Animator';
 import Music from './Music';

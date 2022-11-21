@@ -1,7 +1,6 @@
 import React from 'react';
 import { arrayOf, func, shape, string } from 'prop-types';
 import styled from 'styled-components';
-
 import Work from './Work';
 
 const Wrapper = styled.div`

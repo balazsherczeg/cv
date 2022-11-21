@@ -1,8 +1,7 @@
 import React from 'react';
 import { arrayOf, bool, number, shape, string } from 'prop-types';
 import styled from 'styled-components';
-
-import { getTop, getHeight } from 'utils';
+import { getHeight, getTop } from 'utils';
 
 const Break = styled.div`
   align-items: center;

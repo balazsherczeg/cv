@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-
-import skills from 'data/skills.yaml';
-import work from 'data/work.yaml';
-import projects from 'data/projects.yaml';
 import breaks from 'data/breaks.yaml';
 import music from 'data/music.yaml';
-import Timeline from './Timeline';
-import Events from './Events';
+import projects from 'data/projects.yaml';
+import skills from 'data/skills.yaml';
+import work from 'data/work.yaml';
 import Breaks from './Breaks';
-import Years from './Years';
+import Events from './Events';
 import Names from './Names';
+import Timeline from './Timeline';
+import Years from './Years';
 
 const Outer = styled.div`
   padding-bottom: 50vh;

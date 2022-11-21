@@ -1,8 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
-
 import Portrait from 'assets/images/balazs.jpg';
 import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   background-color: var(--backgroundColor);
