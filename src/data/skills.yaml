@@ -1,0 +1,164 @@
+---
+  - name: Photoshop
+    color: '#305EAB'
+    active:
+      -
+        - 200511
+        - 201401
+    inactive:
+      -
+        - 200505
+        - 200511
+      -
+        - 201401
+        - 201706
+    type: skill
+  - name: Illustrator
+    color: '#E06C19'
+    active:
+      -
+        - 200701
+        - 201506
+    inactive:
+      -
+        - 201506
+        - NOW
+    type: skill
+  - name: InDesign
+    color: '#B5357C'
+    type: skill
+    active:
+      -
+        - 200706
+        - 201506
+    inactive:
+      -
+        - 201506
+        - 201706
+  - name: HTML
+    active:
+      -
+        - 200606
+        - NOW
+    inactive:
+      -
+        - 200510
+        - 200606
+    color: '#DD4B25'
+    type: skill
+  - name: CSS
+    active:
+      -
+        - 200606
+        - NOW
+    inactive:
+      -
+        - 200510
+        - 200606
+    color: '#254BDD'
+    type: skill
+  - name: PHP
+    active:
+      -
+        - 200803
+        - 201701
+      - 
+        - 202110
+        - NOW
+    inactive:
+      -
+        - 200703
+        - 200803
+      -
+        - 201701
+        - 202110
+    color: '#8892bf'
+  - name: MySQL
+    color: '#2B5D80'
+    inactive:
+      -
+        - 200710
+        - 200806
+      -
+        - 201403
+        - NOW
+    active:
+      -
+        - 200806
+        - 201403
+    type: skill
+  - name: WordPress
+    color: '#007097'
+    active:
+      -
+       - 200909
+       - 201512
+  - name: JavaScript
+    active:
+      -
+        - 200901
+        - NOW
+    inactive:
+      -
+        - 200705
+        - 200901
+    color: '#EFD81D'
+    type: skill
+    events:
+      - date: 201609
+        title: A substantial level-up was necessary (and done) due to the Kolam project
+  - name: jQuery
+    active:
+      -
+        - 200801
+        - 201405
+    inactive:
+      -
+        - 200705
+        - 200801
+    color: '#0769AD'
+    events:
+      - date: 201405
+        title: Well, what do I need it for?
+    type: skill
+  - name: React
+    active:
+      -
+        - 201701
+        - NOW
+    color: '#459CB4'
+    events:
+      - date: 201612
+        title: Learnt in three days well enough to get his first developer job
+    type: skill
+  - name: React Native
+    type: skill
+    active:
+      -
+        - 201810
+        - 202007
+    inactive:
+      - 
+        - 202007
+        - NOW
+    color: '#61DAFB'
+  - name: Node.js
+    active:
+      -
+        - 202102
+        - NOW
+    inactive:
+      -
+        - 202010
+        - 202102
+    color: '#689F63'
+  - name: TypeScript
+    inactive:
+      -
+        - 202009
+        - 202108
+    active:
+      -
+        - 202108
+        - NOW
+    color: '#2F74C0'

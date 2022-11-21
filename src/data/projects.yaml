@@ -1,0 +1,56 @@
+  - name: Kolam project
+    active:
+      -
+        - 201607
+        - 201612
+      -
+        - 201810
+        - 201902
+      -
+        - 201910
+        - 202001
+      -
+        - 202004
+        - 202005
+      -
+        - 202010
+        - 202010
+    color: '#FF9800'
+    type: project
+    events:
+      - date: 201602
+        title: Fascinated by South-Indian geometric pavement drawings
+      - date: 201606
+        title: A web prototype for an app
+      - date: 2016010
+        title: Chose Ionic + Angular to move forward
+      - date: 201701
+        title: But this stack was a cul de sac
+      - date: 201809
+        title: Second try, but this time with React Native
+      - date: 201912
+        title: Published on Google Play
+      - date: 202004
+        title: Tamil translation
+  - name: Sailing
+    active:
+      -
+        - 201707
+        - NOW
+    color: '#fff'
+    events:
+      - date: 201706
+        title: Bought an old wooden [folkboat](https://en.wikipedia.org/wiki/Nordic_Folkboat)
+      - date: 201806
+        title: Changed the mast and learnt sailing at Tallinn Bay
+      - date: 201907
+        title: Trip almost as far as Åland
+      - date: 202007
+        title: Trip around Åland
+      - date: 202105
+        title: Started building a self-steering windvane
+      - date: 202107
+        title: Solo trip to Gotland and the Swedish East coast
+      - date: 202107
+        title: Trip to the Finnish Archipelago
+    type: project

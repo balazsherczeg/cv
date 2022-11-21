@@ -1,0 +1,89 @@
+---
+  - name: Freelancing
+    type: work
+    active:
+      -
+        - 200706
+        - 201204
+    inactive:
+      -
+        - 200611
+        - 200706
+      -
+        - 201204
+        - 201506
+    color: '#F2B827'
+  - name: Tartu Art School
+    position: Teacher
+    type: work
+    active:
+      -
+        - 201001
+        - 201706
+    inactive:
+      -
+        - 200902
+        - 201001
+    color: '#EB008B'
+    events:
+      - date: 200901
+        title: Evenenig classes on web-design
+      - date: 201001
+        title: Web design and some coding
+      - date: 201009
+        title: The usasge of graphic design softwares
+      - date: 201309
+        title: Yes, teaching and running a bar at the same time
+      - date: 201409
+        title: With great enthusiasm, started teaching infographics and typography
+  - name: Pirogov
+    position: Manager
+    type: work
+    active:
+      -
+        - 201205
+        - 201406
+    color: '#AD3115'
+    events:
+      - date: 201204
+        title: Accepted the offer to work as a manager of a newly opened bar
+      - date: 201309
+        title: Yes, teaching and running a bar at the same time
+      - date: 201406
+        title: The bar turned out a cozy and popular place and a profitable business
+  - name: PARiM
+    fullName: PARiM Workforce Software
+    type: work
+    active:
+      -
+        - 201702
+        - 202005
+    color: '#69C2EB'
+    events:
+      - date: 201701
+        title: Front-end Developer
+      - date: 201706
+        title: Senior Front-end Developer
+      - date: 201805
+        title: A table to manage infinite amount of data as a timeline, drag-n-drop, editing interfaces, bulk actions, filters...
+      - date: 201809
+        title: Performance optimization
+      - date: 201901
+        title: Wage calculation module
+      - date: 202005
+        title: Finished the most complex wage calculation module ever
+  - name: Concise
+    type: work
+    active:
+      -
+        - 202101
+        - 202105
+    color: '#999'
+  - name: Fractory
+    fullName: Fractory Solutions OÜ
+    type: work
+    active: 
+      -
+        - 202110
+        - 202211
+    color: '#FA423A' 

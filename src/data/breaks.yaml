@@ -1,0 +1,23 @@
+---
+  - name: India
+    period:
+      - 201512
+      - 201603
+    type: break
+    full: true
+  - name: India / Nepal
+    period:
+      - 201903
+      - 201905
+    type: break
+    full: true
+  - name: Egypt
+    period:
+      - 202002
+      - 202003
+    type: break
+  - name: Malta
+    period:
+      - 202202
+      - 202204
+    type: break

@@ -1,0 +1,59 @@
+---
+  - name: Listening to
+    color: '#000'
+    events:
+      - type: music
+        date: 200610
+        title: Our Faces Split The Coast In Half
+        artist: Broken Social Scene
+        link: https://www.youtube.com/watch?v=mEerSoIqRTM
+      - type: music
+        date: 200908
+        title: Diferente
+        artist: Gotan Project
+        link: https://www.youtube.com/watch?v=DH76CZbqoqI
+      - type: music
+        date: 201108
+        title: Disco Džumbus
+        artist: Boban Marković Orkestar
+        link: https://www.youtube.com/watch?v=zQUZ4nlUdHU
+      - date: 201403
+        title: Switched on [Klassikaraadio](http://klassikaraadio.err.ee) and haven’t switched it off yet
+      - type: music
+        date: 201705
+        title: Dum Maro Dum
+        artist: Asha Bhosle
+        link: https://www.youtube.com/watch?v=kOrRYDJ4AuY
+      - type: music
+        date: 201802
+        title: Snow Flower
+        artist: Ananda Shankar
+        link: https://www.youtube.com/watch?v=w3qqgVFnPoE
+      - type: music
+        date: 201808
+        title: Cucurrucucú Paloma
+        artist: Pedro Infante
+        link: https://www.youtube.com/watch?v=oDD58aHdMQk
+      - type: music
+        date: 201811
+        title: Telstar
+        artist: The Tornados
+        link: https://www.youtube.com/watch?v=ryrEPzsx1gQ
+      - type: music
+        date: 201904
+        title: Maya Luki Luki
+        artist: Tika Prasain
+        link: https://www.youtube.com/watch?v=KYYvY3cyeKI
+      - type: music
+        date: 202006
+        title: Enta Omri
+        artist: Oum Kalthoum
+        link: https://www.youtube.com/watch?v=Xd2HTVN0E1E
+
+
+#        I'm In The Mood For Ska - Lord Tanamo & The Skatalites
+#       https://www.youtube.com/watch?v=odJShsFuBbo
+#     the nationals
+#     mr november
+#     the delta rhythm boys
+#     olodum
