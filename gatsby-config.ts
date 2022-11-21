@@ -13,41 +13,24 @@ const config: GatsbyConfig = {
   plugins: [
     "gatsby-plugin-styled-components",
     {
-    resolve: "gatsby-plugin-root-import",
-    options: {
-      utils: path.join(__dirname, "src", "utils"),
-      data: path.join(__dirname, "src", "data"),
-      assets: path.join(__dirname, "src", "assets"),
+      resolve: "gatsby-plugin-root-import",
+      options: {
+        utils: path.join(__dirname, "src", "utils"),
+        data: path.join(__dirname, "src", "data"),
+        assets: path.join(__dirname, "src", "assets"),
+      },
     },
-  },
-]
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `source sans pro`,
+          `source serif pro`,
+        ],
+        display: 'swap'
+      }
+    },
+  ]
 };
 
 export default config;
-
-
-
-// const path = require("path");
-
-// module.exports = {
-//     plugins: [
-//         {
-//           resolve: "gatsby-plugin-root-import",
-//           options: {
-//             utils: path.join(__dirname, "src", "utils"),
-//             data: path.join(__dirname, "src", "data"),
-//             assets: path.join(__dirname, "src", "assets"),
-//           },
-//         },
-//         {
-//           resolve: `gatsby-plugin-google-fonts`,
-//           options: {
-//             fonts: [
-//               `source sans pro`,
-//               `source serif pro`,
-//             ],
-//             display: 'swap'
-//           }
-//         }
-//     ],
-// };
