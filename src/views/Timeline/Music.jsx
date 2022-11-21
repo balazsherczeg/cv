@@ -14,13 +14,13 @@ const Artist = styled.p`
   font-style: italic;
 `;
 
-const Music = ({
-  artist,
-  link,
-  title,
-}) => (
+const Music = ({ artist, link, title }) => (
   <>
-    <Title><a href={link} target="music">{title}</a></Title>
+    <Title>
+      <a href={link} target="music">
+        {title}
+      </a>
+    </Title>
     <Artist>{artist}</Artist>
   </>
 );

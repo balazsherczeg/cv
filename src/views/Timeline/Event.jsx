@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   margin-top: calc(var(--markerSize) / -2);
 
   .InfoWrapper {
-    transition: opacity .3s;
+    transition: opacity 0.3s;
 
     &--mounted {
       opacity: 1;
@@ -51,30 +51,15 @@ const Event = ({
   color,
   isOpen,
   eventData,
-  eventData: {
-    date,
-    title,
-    type,
-  },
+  eventData: { date, title, type },
 }) => {
-  const top = getTop(date);
-
   return (
     <Wrapper date={date}>
-      <Marker
-        date={date}
-        color={color}
-      />
-      <Animator
-        isMounted={isOpen}
-        className="InfoWrapper"
-        delay={300}
-      >
-        <Info
-          date={date}
-        >
+      <Marker date={date} color={color} />
+      <Animator isMounted={isOpen} className="InfoWrapper" delay={300}>
+        <Info date={date}>
           {type === 'music' ? (
-            <Music { ...eventData } />
+            <Music {...eventData} />
           ) : (
             <Markdown>{title}</Markdown>
           )}

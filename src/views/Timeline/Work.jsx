@@ -1,22 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Work = ({
-  item: {
-    position,
-    url,
-    fullName,
-    name,
-  },
-
-}) => (
+const Work = ({ item: { position, url, fullName, name } }) => (
   <>
     <p>{fullName || name}</p>
     <p>{position}</p>
   </>
 );
 
-Work.propTypes = {
-};
+Work.propTypes = {};
 
 export default Work;

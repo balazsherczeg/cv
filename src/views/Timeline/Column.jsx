@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  bool,
-  func,
-  node,
-  string,
-} from 'prop-types';
+import { bool, func, node, string } from 'prop-types';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -13,19 +8,12 @@ const Wrapper = styled.div`
   height: 100%;
   position: relative;
   transition: var(--openingSpeed) width;
-  width: ${({ isOpen }) => isOpen ? 'var(--headerHeight)' : `var(--columnWidth)`};
+  width: ${({ isOpen }) =>
+    isOpen ? 'var(--headerHeight)' : 'var(--columnWidth)'};
 `;
 
-const Column = ({
-  children,
-  isOpen,
-  name,
-  onClick,
-}) => (
-  <Wrapper
-    isOpen={isOpen}
-    onClick={() => onClick(isOpen ? null : name)}
-  >
+const Column = ({ children, isOpen, name, onClick }) => (
+  <Wrapper isOpen={isOpen} onClick={() => onClick(isOpen ? null : name)}>
     {children}
   </Wrapper>
 );

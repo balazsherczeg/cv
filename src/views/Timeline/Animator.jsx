@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 // https://stackoverflow.com/a/54114180/9162948
 
@@ -18,19 +18,14 @@ function useDelayUnmount(isMounted, delayTime) {
   return shouldRender;
 }
 
-const Animator = ({
-  children,
-  className,
-  delay = 250,
-  isMounted,
-}) => {
+const Animator = ({ children, className, delay = 250, isMounted }) => {
   const shouldRenderChild = useDelayUnmount(isMounted, delay);
-  const animationClassName = isMounted ? `${className}--mounted` : `${className}--unmounted`
+  const animationClassName = isMounted
+    ? `${className}--mounted`
+    : `${className}--unmounted`;
 
   return (
-    <div
-      className={`${className} ${animationClassName}`}
-    >
+    <div className={`${className} ${animationClassName}`}>
       {shouldRenderChild && children}
     </div>
   );

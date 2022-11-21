@@ -28,11 +28,10 @@ const Inner = styled.div`
 
 const date = new Date();
 
-const getYear = (index) => date.getFullYear() - (index * 1);
+const getYear = (index) => date.getFullYear() - index * 1;
 
-const getCurrentYearHeight = () => (
-  getFullYearHeight() * ((date.getMonth() + 1) / 12)
-);
+const getCurrentYearHeight = () =>
+  getFullYearHeight() * ((date.getMonth() + 1) / 12);
 
 const getFullYearHeight = () => 100 / MAX;
 
@@ -42,20 +41,13 @@ const getHeight = (index) => {
   if (index === 0) return getCurrentYearHeight();
   if (index === MAX) return getFirstYearHeight();
   return getFullYearHeight();
-}
+};
 
 const Years = () => (
   <>
     {[...Array(MAX + 1)].map((e, index) => (
-      <Year
-        key={getYear(index)}
-        height={getHeight(index)}
-      >
-        {(index < MAX) && (
-          <Inner>
-            {getYear(index)}
-          </Inner>
-        )}
+      <Year key={getYear(index)} height={getHeight(index)}>
+        {index < MAX && <Inner>{getYear(index)}</Inner>}
       </Year>
     ))}
   </>

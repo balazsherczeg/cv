@@ -1,18 +1,12 @@
 import React from 'react';
-import {
-  arrayOf,
-  bool,
-  number,
-  shape,
-  string,
-} from 'prop-types';
+import { arrayOf, bool, number, shape, string } from 'prop-types';
 import styled from 'styled-components';
 
 import { getTop, getHeight } from 'utils';
 
 const Break = styled.div`
   align-items: center;
-  background-color: ${({ full }) => full ? '#eee' : '#eeea'};
+  background-color: ${({ full }) => (full ? '#eee' : '#eeea')};
   display: flex;
   font-size: 14px;
   height: ${({ end, start }) => `${getHeight(end, start)}%`};
@@ -20,25 +14,14 @@ const Break = styled.div`
   text-transform: uppercase;
   top: ${({ end }) => `${getTop(end)}%`};
   width: 100%;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   color: #000c;
 `;
 
-const Breaks = ({
-  items,
-}) => (
+const Breaks = ({ items }) => (
   <>
-    {items.map(({
-      name,
-      period: [start, end],
-      full,
-    }) => (
-      <Break
-        end={end}
-        full={full}
-        key={name}
-        start={start}
-      >
+    {items.map(({ name, period: [start, end], full }) => (
+      <Break end={end} full={full} key={name} start={start}>
         {name}
       </Break>
     ))}
@@ -46,11 +29,13 @@ const Breaks = ({
 );
 
 Breaks.propTypes = {
-  items: arrayOf(shape({
-    name: string.isRequired,
-    period: arrayOf(number).isRequired,
-    full: bool,
-  })).isRequired,
+  items: arrayOf(
+    shape({
+      name: string.isRequired,
+      period: arrayOf(number).isRequired,
+      full: bool,
+    })
+  ).isRequired,
 };
 
 export default Breaks;

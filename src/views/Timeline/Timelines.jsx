@@ -19,7 +19,7 @@ const Outer = styled.div`
 const Wrapper = styled.div`
   --headerHeight: 9em;
   --columnWidth: 24px;
-  --openingSpeed: .4s;
+  --openingSpeed: 0.4s;
 
   height: 500vh;
   position: relative;
@@ -55,25 +55,19 @@ const Timelines = () => {
     <Outer>
       <Wrapper>
         <Header>
-          <Names
-            items={items}
-            onNameClick={setOpen}
-            open={open}
-          />
+          <Names items={items} onNameClick={setOpen} open={open} />
         </Header>
 
         <Layer>
           <Periods>
-            {
-              items.map((item) => (
-                <Timeline
-                  {...item}
-                  isOpen={open === item.name}
-                  onClick={setOpen}
-                  key={`timeline-${item.name}`}
-                />
-              ))
-            }
+            {items.map((item) => (
+              <Timeline
+                {...item}
+                isOpen={open === item.name}
+                onClick={setOpen}
+                key={`timeline-${item.name}`}
+              />
+            ))}
           </Periods>
         </Layer>
 
@@ -87,20 +81,16 @@ const Timelines = () => {
 
         <Layer>
           <Periods>
-            {
-              items.map((item) => (
-                <Events
-                  {...item}
-                  isOpen={open === item.name}
-                  onClick={setOpen}
-                  key={`event-${item.name}`}
-                />
-              ))
-            }
+            {items.map((item) => (
+              <Events
+                {...item}
+                isOpen={open === item.name}
+                onClick={setOpen}
+                key={`event-${item.name}`}
+              />
+            ))}
           </Periods>
         </Layer>
-
-
       </Wrapper>
     </Outer>
   );
