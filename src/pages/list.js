@@ -1,6 +1,6 @@
 import React from 'react';
-import List from '../views/List';
+import List from 'views/List';
 
-const ListPage = () => <div>eouhtoesn</div>;
+const ListPage = () => <List />;
 
 export default ListPage;

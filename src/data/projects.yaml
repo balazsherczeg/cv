@@ -32,12 +32,19 @@
         title: Published on Google Play
       - date: 202004
         title: Tamil translation
+    description: A mobile app inspired by pavement drawings seen in South India, a tool to draw them. Written in React Native.
+    links: 
+      - label: Google Play
+        url: https://play.google.com/store/apps/details?id=com.kolamapp.kolam
+      - label: Product site
+        url: https://kolamapp.com
   - name: Sailing
     active:
       -
         - 201707
         - NOW
     color: '#fff'
+    ignoreInList: True
     events:
       - date: 201706
         title: Bought an old wooden [folkboat](https://en.wikipedia.org/wiki/Nordic_Folkboat)
@@ -56,3 +63,14 @@
       - date: 202207
         title: Trip to the Finnish Archipelago
     type: project
+  - name: The Elements of Arabic Art
+    active: 
+      - 
+        - 202009
+        - 202012
+    description: The digital edition of Jules Bourgoin’s book featuring designs of Islamic ornamental patterns, with some SVG editing capabilities. Work in progress.
+    links: 
+      - label: Site
+        url: http://arabicart.herczeg.ee/
+      - label: GitHub
+        url: https://github.com/balazsherczeg/arabicart
