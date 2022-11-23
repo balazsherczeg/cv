@@ -1,4 +1,10 @@
 ---
+  - name: Balkan
+    period:
+      - 201107
+      - 201108
+    type: break
+    full: true
   - name: India
     period:
       - 201512

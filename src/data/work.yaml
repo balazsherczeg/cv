@@ -29,7 +29,7 @@
     color: '#EB008B'
     events:
       - date: 200901
-        title: Evenenig classes on web-design
+        title: Giving evening classes on web-design
       - date: 201001
         title: Web design and some coding
       - date: 201009
@@ -78,7 +78,7 @@
         title: Wage calculation module
       - date: 202005
         title: Finished the most complex wage calculation module ever
-    description: Created or recreated modules for the web app. Mainly elaborate tables for admins to view and manage data in every imaginable way. Ttables that are fine with displaying 10.000 rows, 100.000 items and an practically infinit number of columns in a browser window, maintaining flowless performance at the same time.
+    description: Created or recreated modules for the web app. Mainly elaborate tables for admins to view and manage data in every imaginable way. Tables that are fine with displaying 10,000 rows, 100,000 items and an practically infinit number of columns in a browser window, maintaining flowless performance at the same time.
   - name: Concise
     fullName: Concise Systems OÜ
     url: https://concise.ee
@@ -92,7 +92,7 @@
   - name: Fractory
     fullName: Fractory Solutions OÜ
     url: https://fractory.com
-    position: Senior Software Engineer
+    position: Senior Full-stack Engineer
     type: work
     active: 
       -

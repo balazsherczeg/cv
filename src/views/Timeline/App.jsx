@@ -1,21 +1,18 @@
 import React from 'react';
+import 'assets/styles/reset.css';
+import 'assets/styles/style.css';
 import Header from 'components/Header';
-import Layout from 'components/Layout';
 import { Link } from 'gatsby';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import Timelines from './Timelines';
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    --backgroundColor: #eee;
-
-    background-color: var(--backgroundColor);
-  }
+const Layout = styled.div`
+  padding-top: var(--pageHeaderHeight);
+  padding-bottom: 3rem;
 `;
 
 const App = () => (
   <Layout>
-    <GlobalStyle />
     <Header>
       <Link to="list">List view</Link>
     </Header>

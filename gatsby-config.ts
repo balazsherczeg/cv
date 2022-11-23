@@ -20,13 +20,6 @@ const config: GatsbyConfig = {
         assets: path.join(__dirname, 'src', 'assets'),
       },
     },
-    {
-      resolve: 'gatsby-plugin-google-fonts',
-      options: {
-        fonts: ['source sans pro', 'source serif pro'],
-        display: 'swap',
-      },
-    },
   ],
 };
 

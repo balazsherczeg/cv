@@ -1,11 +1,12 @@
 import React from 'react';
 import Portrait from 'assets/images/balazs.jpg';
 import styled from 'styled-components';
+import NoPrint from './NoPrint';
 
 const Wrapper = styled.div`
   background-color: var(--backgroundColor);
   height: 100%;
-  padding: 0 0.5rem;
+  padding: 0 1.5rem 0 0.5rem;
   display: flex;
   line-height: 1rem;
   align-items: center;
@@ -17,6 +18,11 @@ const Wrapper = styled.div`
   left: 0;
   right: 0;
   z-index: 10;
+
+  @media print {
+    padding-left: 0;
+    height: auto;
+  }
 `;
 
 const TitleWrapper = styled.div`
@@ -37,11 +43,12 @@ const Title = styled.h1`
 `;
 
 const Name = styled.span`
-  font-weight: 700;
+  font-variation-settings: 'wght' 700;
 `;
 
 const Sub = styled.span`
-  font-style: italic;
+  font-family: var(--sansItalic);
+  font-variation-settings: 'wght' 500;
 `;
 
 const Header = ({
@@ -49,12 +56,14 @@ const Header = ({
 }: React.PropsWithChildren<Record<never, never>>) => (
   <Wrapper>
     <TitleWrapper>
-      <Image src={Portrait} />
+      <NoPrint>
+        <Image src={Portrait} />
+      </NoPrint>
       <Title>
         <Name>Balázs Herczeg</Name> <Sub>resumé</Sub>
       </Title>
     </TitleWrapper>
-    {children}
+    <NoPrint>{children}</NoPrint>
   </Wrapper>
 );
 
